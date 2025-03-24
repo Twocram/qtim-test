@@ -3,9 +3,10 @@
 
 <template>
   <div>
-    <v-header />
+    This is about page
   </div>
 </template>
 
 <style scoped>
+
 </style>
