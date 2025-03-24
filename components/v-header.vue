@@ -1,23 +1,23 @@
 <script setup lang="ts">
-import IconLogo from "~/assets/icons/logo.svg";
-import GBIcon from "~/assets/icons/flags/gb.svg"
-import VButton from "~/components/ui/v-button.vue";
+import GBIcon from '~/assets/icons/flags/gb.svg'
+import IconLogo from '~/assets/icons/logo.svg'
+import VButton from '~/components/ui/v-button.vue'
 
 interface NavLink {
-  title: string;
-  href: string;
+  title: string
+  link: string
 }
 
 const navLinks: NavLink[] = [
   {
-    title: "Works",
-    href: "/",
+    title: 'Works',
+    link: '/',
   },
   {
-    title: "About",
-    href: "/about",
+    title: 'About',
+    link: '/about',
   },
-];
+]
 </script>
 
 <template>
@@ -27,24 +27,28 @@ const navLinks: NavLink[] = [
     <nav class="header-nav">
       <ul class="header-nav__list">
         <li
+          v-for="navLink in navLinks"
+          :key="navLink.link"
           class="header-nav__list-item"
-          v-for="link in navLinks"
-          :key="link.title"
         >
-          <NuxtLink class="header-nav__list-item__icon" :to="link.href">{{ link.title }}</NuxtLink>
+          <NuxtLink
+            class="header-nav__list-item__icon"
+            :to="navLink.link"
+          >
+            {{ navLink.title }}
+          </NuxtLink>
         </li>
       </ul>
     </nav>
 
     <div class="header-buttons__list">
-      <v-button variant="rounded">
+      <VButton variant="rounded">
         <GBIcon :filled="true" />
-      </v-button>
-      <v-button class="header-buttons__list-action">
+      </VButton>
+      <VButton class="header-buttons__list-action">
         Let's work
-      </v-button>
+      </VButton>
     </div>
-
   </header>
 </template>
 
