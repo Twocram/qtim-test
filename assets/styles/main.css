@@ -1,3 +1,6 @@
+@import 'reset.css';
+@import 'fonts.css';
+
 :root {
     --black-color: #101010;
     --medium-black-color: #232323;
@@ -12,5 +15,10 @@
 
 html, body {
     min-height: 100%;
+    color: var(--black-color);
+    font-family: 'TTCommons', sans-serif;
+}
+
+a {
     color: var(--black-color);
 }

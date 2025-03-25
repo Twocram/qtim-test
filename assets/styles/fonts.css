@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'TTCommons';
+    src: url("/public/fonts/TTCommons/TTCommons-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTCommons';
+    src: url("/public/fonts/TTCommons/TTCommons-Regular.eot") format("embedded-opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTCommons';
+    src: url("/public/fonts/TTCommons/TTCommons-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
