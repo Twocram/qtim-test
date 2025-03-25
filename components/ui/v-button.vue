@@ -4,7 +4,7 @@ interface Props {
 }
 
 withDefaults(defineProps<Props>(), {
-  variant: 'default'
+  variant: 'default',
 })
 </script>
 
@@ -39,5 +39,4 @@ withDefaults(defineProps<Props>(), {
   background: unset;
   border: 2px solid #0000001A;
 }
-
 </style>

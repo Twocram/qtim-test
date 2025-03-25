@@ -58,6 +58,7 @@ const navLinks: NavLink[] = [
   padding: 0 40px;
   display: flex;
   align-items: center;
+  margin-bottom: 120px;
 }
 
 .header-icon {
